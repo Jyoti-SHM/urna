@@ -274,3 +274,38 @@ section[id],.plans[id]{scroll-margin-top:110px}
   #poster-img{max-width:94vw;max-height:84vh;}
   .poster-tools span{display:none;}
 }
+
+/* v5 — menu visible on every device (same as desktop) */
+.nav nav{margin-left:auto}
+.nav>.pill{flex:0 0 auto;margin-left:clamp(14px,2vw,30px);white-space:nowrap}
+html{scroll-padding-top:100px}
+@media(max-width:1100px){
+  .nav{padding:14px 4vw}
+  .logo img{height:46px}
+  .nav nav{gap:clamp(12px,1.6vw,22px)!important}
+  .nav a{font-size:11px;letter-spacing:.1em}
+  .nav>.pill{padding:10px 16px}
+}
+@media(max-width:850px){
+  .nav{flex-wrap:wrap;row-gap:0;padding:10px 5vw 0;min-height:0}
+  .logo img{height:38px}
+  .nav>.pill{order:2;margin-left:auto;padding:9px 14px;font-size:10.5px}
+  .nav nav{display:flex;order:3;width:100%;margin:10px 0 0;padding:11px 0 12px;border-top:1px solid rgba(0,0,0,.07);
+    justify-content:space-between;gap:12px!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .nav nav::-webkit-scrollbar{display:none}
+  .nav nav a{font-size:10.5px;letter-spacing:.07em;flex:0 0 auto}
+  .hero{padding-top:150px}
+  html{scroll-padding-top:110px}
+}
+@media(max-width:430px){
+  .nav nav{gap:8px!important}
+  .nav nav a{font-size:10px;letter-spacing:.03em}
+}
+@media(max-width:350px){
+  .nav nav{gap:6px!important}
+  .nav nav a{font-size:9px;letter-spacing:0}
+}
+
+/* v6 — headline size matches the Urna home page */
+:root{--headline:clamp(34px,4.4vw,84px)}
+body h1,body h2{font-size:var(--headline)!important;line-height:.98}

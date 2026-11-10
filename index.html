@@ -8,27 +8,28 @@
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="#top"><img src="assets/urna-logo.png" alt="Urna"></a>
-  <nav>
+  <a class="logo" href="#top"><img src="assets/urna-logo-new.png" alt="Urna — from the House of Mittal Builders"></a>
+  <nav id="site-menu">
     <a href="#projects">Projects</a>
     <a href="#sustainability">Sustainability</a>
     <a href="#reports">Reports</a>
     <a href="#stories">Stories</a>
     <a href="#about">About</a>
-    <a class="pill" href="#contact">Contact</a>
   </nav>
+  <a class="pill" href="#contact">Contact</a>
 </header>
 
 <main id="top">
 <section class="hero">
   <img src="assets/building-mumbai-tomorrow.jpg" alt="Green high-rise architecture">
   <div class="hero-copy">
-    <h1>Building Mumbai’s tomorrow.</h1>
+    <h1 class="one-line">Building Mumbai’s tomorrow.</h1>
     <div class="cta-row">
       <a class="button primary" href="#projects">Explore projects</a>
       <a class="button ghost" href="#sustainability">Explore sustainability</a>
     </div>
   </div>
+  <span class="render-tag">Rendering</span>
 </section>
 
 <section id="about" class="chapter legacy">
@@ -43,7 +44,6 @@
 </section>
 
 <section id="projects" class="chapter projects">
-  <p class="eyebrow">Featured projects</p>
   <h2>Five projects. One belief.</h2>
   <div class="project-grid">
     <article class="project-card">
@@ -66,27 +66,17 @@
         <a href="#" class="text-link">Project progress →</a>
       </div>
     </article>
-    <article class="project-card">
+    <article class="project-card coming">
       <img src="assets/bio-3.jpeg" alt="Biophilic architecture">
       <div>
-        <p class="eyebrow">Andheri West</p>
-        <h3>111A/Urna</h3>
+        <h3>Andheri West</h3>
         <p>Coming soon</p>
       </div>
     </article>
-    <article class="project-card">
+    <article class="project-card coming">
       <img src="assets/bio-4.jpeg" alt="Biophilic architecture">
       <div>
-        <p class="eyebrow">Borivali East</p>
-        <h3>56C/Urna</h3>
-        <p>Coming soon</p>
-      </div>
-    </article>
-    <article class="project-card">
-      <img src="assets/bio-5.jpeg" alt="Biophilic architecture">
-      <div>
-        <p class="eyebrow">Borivali E</p>
-        <h3>476/Urna</h3>
+        <h3>Borivali East</h3>
         <p>Coming soon</p>
       </div>
     </article>
@@ -101,51 +91,69 @@
       <p>A responsible home should feel luxurious, healthier, more comfortable, more valuable over time. That is why Urna translates sustainability into lived benefits — cleaner air, greater water security, lower dependence and future-ready communities.</p>
       <a class="button manifesto-btn" href="manifesto.html">The Urna Manifesto</a>
     </div>
-    <img src="assets/bio-1.jpeg" alt="Biophilic architecture">
+    <figure class="render-figure">
+      <img src="assets/bio-1.jpeg" alt="Biophilic architecture">
+      <span class="render-tag">Rendering</span>
+    </figure>
   </div>
 </section>
 
 <section class="chapter sustainability">
-  <p class="eyebrow">The Five Guiding Systems at Urna</p>
   <h2>Food. Water. Air. Energy. Space. At Urna, these are not marketing ideas. This is architecture.</h2>
-  <p>Urna aims to create enduring development, rooted in the faith that our futures are interdependent — people, society and planet.</p>
   <div class="systems">
-    <button data-poster="assets/prithvi.jpeg">Food<span>Homes that grow food</span></button>
-    <button data-poster="assets/jala.jpeg">Water<span>Homes that save water</span></button>
-    <button data-poster="assets/vayu.jpeg">Air<span>Homes that breathe</span></button>
-    <button data-poster="assets/agni.jpeg">Energy<span>Homes that save energy</span></button>
-    <button data-poster="assets/akasha.jpeg">Space<span>Homes that love space</span></button>
+    <button data-poster="assets/posters/prithvi-landscape.jpg" data-poster-portrait="assets/posters/prithvi-portrait.webp">Food<span>Homes that grow food</span></button>
+    <button data-poster="assets/posters/jala-landscape.jpg" data-poster-portrait="assets/posters/jala-portrait.webp">Water<span>Homes that save water</span></button>
+    <button data-poster="assets/posters/vayu-landscape.jpg" data-poster-portrait="assets/posters/vayu-portrait.webp">Air<span>Homes that breathe</span></button>
+    <button data-poster="assets/posters/agni-landscape.jpg" data-poster-portrait="assets/posters/agni-portrait.webp">Energy<span>Homes that save energy</span></button>
+    <button data-poster="assets/posters/akasha-landscape.jpg" data-poster-portrait="assets/posters/akasha-portrait.webp">Space<span>Homes that love space</span></button>
   </div>
 </section>
 
 <section id="stories" class="chapter stories">
-  <h2>The ideas behind Urna homes.</h2>
-  <div class="story-grid">
-    <article><img src="assets/bio-2.jpeg" alt=""><h3>Can a community become carbon-neutral?</h3><p>A simple guide for buyers.</p></article>
-    <article><img src="assets/pool.jpg" alt=""><h3>When the future pays you back</h3><p>How thoughtful design becomes long-term value.</p></article>
-    <article><img src="assets/bio-4.jpeg" alt=""><h3>When water independence matters</h3><p>Building greater water security into everyday life.</p></article>
-    <article><img src="assets/bio-5.jpeg" alt=""><h3>What if your home is where your food grows?</h3><p>Bringing freshness, ecology and community together.</p></article>
+  <div class="rail-head">
+    <h2>The ideas behind Urna homes.</h2>
+    <div class="rail-arrows" data-rail="story-rail">
+      <button type="button" class="rail-btn prev" aria-label="Previous stories">←</button>
+      <button type="button" class="rail-btn next" aria-label="More stories">→</button>
+    </div>
+  </div>
+  <div class="story-grid rail" id="story-rail">
+    <a class="story-card" href="stories/carbon-neutral-community.html"><img src="assets/bio-2.jpeg" alt=""><h3>Can a community become carbon-neutral?</h3><p>A simple guide for buyers.</p></a>
+    <a class="story-card" href="stories/future-pays-you-back.html"><img src="assets/pool.jpg" alt=""><h3>When the future pays you back</h3><p>How thoughtful design becomes long-term value.</p></a>
+    <a class="story-card" href="stories/water-independence.html"><img src="assets/bio-4.jpeg" alt=""><h3>When water independence matters</h3><p>Building greater water security into everyday life.</p></a>
+    <a class="story-card" href="stories/grow-food-at-home.html"><img src="assets/bio-5.jpeg" alt=""><h3>What if your home is where your food grows?</h3><p>Bringing freshness, ecology and community together.</p></a>
+    <a class="story-card" href="stories/never-wait-for-a-tanker.html"><img src="assets/mumbai.jpg" alt=""><h3>You should never have to wait for a tanker</h3><p>What Mumbai’s water scarcity asks of a home.</p></a>
+    <a class="story-card" href="stories/where-does-your-home-end.html"><img src="assets/materials-image.jpeg" alt=""><h3>Ever wondered where your home ends?</h3><p>Responsible folks, responsible homes.</p></a>
+    <a class="story-card" href="stories/elements-and-daily-life.html"><img src="assets/vayu.jpg" alt=""><h3>How the elements shape our daily life</h3><p>Air, light and space, designed in.</p></a>
   </div>
 </section>
 
 <section class="chapter dashboard">
-  <h2>What can be measured, can be bettered.</h2>
-  <div class="report-grid">
-    <a href="#">Water reused<br><strong>12.4M L</strong></a>
-    <a href="#">Carbon avoided<br><strong>1,850 t</strong></a>
-    <a href="#">Solar generated<br><strong>2.1 GWh</strong></a>
-    <a href="#">Construction waste to landfill<br><strong>0</strong></a>
+  <h2 class="one-line">What can be measured, can be bettered.</h2>
+  <div class="gauges">
+    <div class="gauge" style="--pct:26;--c:#f0962b"><span class="gauge-label">Annual Energy Savings</span><div class="ring"><b>26%</b></div><strong>48,400 kWh</strong></div>
+    <div class="gauge" style="--pct:43;--c:#3cc3e6"><span class="gauge-label">Annual Water Savings</span><div class="ring"><b>43%</b></div><strong>5,133 kl</strong></div>
+    <div class="gauge" style="--pct:82;--c:#b7814f"><span class="gauge-label">Annual Waste Savings</span><div class="ring"><b>82%</b></div><strong>25,844 Kg</strong></div>
+    <div class="gauge" style="--pct:48;--c:#9b6fc0"><span class="gauge-label">Material Savings</span><div class="ring"><b>48%</b></div><strong>1,319 tCO<sub>2</sub>e</strong></div>
   </div>
 </section>
 
 <section id="reports" class="chapter reports">
-  <p class="eyebrow">Whitepapers and reports</p>
-  <h2>Understanding how Urna works.</h2>
-  <div class="report-grid">
-    <a href="#">Carbon-neutrality methodology</a>
-    <a href="#">Water systems</a>
-    <a href="#">Material choices</a>
-    <a href="#">Energy generation</a>
+  <div class="rail-head">
+    <div>
+      <p class="eyebrow">Whitepapers and reports</p>
+      <h2>Understanding how Urna works.</h2>
+    </div>
+    <div class="rail-arrows" data-rail="report-rail">
+      <button type="button" class="rail-btn prev" aria-label="Previous reports">←</button>
+      <button type="button" class="rail-btn next" aria-label="More reports">→</button>
+    </div>
+  </div>
+  <div class="report-grid rail" id="report-rail">
+    <a href="assets/reports/mittal-auriga-sustainability-report.pdf" target="_blank" rel="noopener">Mittal Auriga Sustainability Report</a>
+    <a href="assets/reports/vertical-farms.jpg" data-poster="assets/reports/vertical-farms.jpg">How Urna Vertical Farms work</a>
+    <a href="assets/reports/tco-landscape.jpg" data-poster="assets/reports/tco-landscape.jpg" data-poster-portrait="assets/reports/tco-portrait.jpg">TCO: Urna vs Conventional home</a>
+    <a href="#" class="soon">Material choices</a>
   </div>
 </section>
 
@@ -154,7 +162,6 @@
   <div class="community-copy">
     <h2>We build better homes for a community that believes in building a better world.</h2>
     <p>Urna communities are designed around people who believe in sustainability and handing over a better planet to the next generation. This is a community that believes in participation and shared responsibilities.</p>
-    <a href="#" class="button darkbtn">Explore community stories</a>
   </div>
 </section>
 
@@ -162,7 +169,7 @@
   <img src="assets/71p-hero.jpeg" alt="">
   <div class="veil"></div>
   <div class="final-copy">
-    <h2>Explore the next generation of Mumbai homes.</h2>
+    <h2>Explore the next generation<br>of Mumbai homes.</h2>
     <div class="cta-row">
       <a class="button primary" href="#projects">Explore projects</a>
       <a class="button ghost" href="mailto:connect@urna.example">Talk to us</a>
@@ -174,12 +181,12 @@
 </main>
 
 <footer>
-  <img src="assets/urna-logo.png" alt="Urna">
+  <img src="assets/urna-logo-new.png" alt="Urna">
   <p>Projects · Sustainability stories · Whitepapers and reports · Community stories · About · Contact</p>
 </footer>
 
 <div class="poster-viewer" id="poster-viewer">
-  <button class="poster-close">×</button>
+  <button class="poster-close" aria-label="Close">×</button>
   <img id="poster-img" alt="">
 </div>
 
